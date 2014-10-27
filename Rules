@@ -19,7 +19,7 @@ compile '*' do
   elsif item.binary?
     # don’t filter binary items
   else
-    filter :erb
+    filter :haml
     layout 'default'
   end
 end
