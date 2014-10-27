@@ -13,6 +13,11 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+passthrough '/fonts/*'
+passthrough '/js/*'
+passthrough '/css/*'
+passthrough '/img/*'
+
 compile '*' do
   if item[:extension] == 'css'
     # don’t filter stylesheets
@@ -22,10 +27,6 @@ compile '*' do
     filter :haml
     layout 'default'
   end
-end
-
-route '/fonts/*' do
-  item.identifier.chop
 end
 
 route '*' do
