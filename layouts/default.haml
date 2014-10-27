@@ -74,6 +74,19 @@
       %script{:src => 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'}
       %script{:src => 'https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'}
   %body
+    / header
+    %header
+      #stuck_container
+        .menuBox
+          .container
+            %h1.navbar-brand.navbar-brand_
+              %a{:href => "index.html"}
+                %img{:alt => "", :src => "/img/logo.png"}/
+                %span company name
+            %nav.navbar.navbar-default.navbar-static-top.tm_navbar.clearfix{:role => "navigation"}
+              %ul.nav.sf-menu.clearfix
+                %li{:class => ('active' if @item.identifier == '/')}
+                  %a{:href => "/"} Home
     = yield
     / footer
     %footer
