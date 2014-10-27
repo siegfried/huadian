@@ -24,6 +24,10 @@ compile '*' do
   end
 end
 
+route '/fonts/*' do
+  item.identifier.chop
+end
+
 route '*' do
   if item[:extension] == 'css'
     # Write item with identifier /foo/ to /foo.css
