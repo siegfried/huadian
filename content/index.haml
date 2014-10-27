@@ -2,15 +2,220 @@
 title: Home
 ---
 
-%h1 A Brand New nanoc Site
-%p You’ve just created a new nanoc site. The page you are looking at right now is the home page for your site. To get started, consider replacing this default homepage with your own customized homepage. Some pointers on how to do so:
-%ul
-  %li
+/ header
+%header
+  #stuck_container
+    .menuBox
+      .container
+        %h1.navbar-brand.navbar-brand_
+          %a{:href => "index.html"}
+            %img{:alt => "", :src => "img/logo.png"}/
+            %span company name
+        %nav.navbar.navbar-default.navbar-static-top.tm_navbar.clearfix{:role => "navigation"}
+          %ul.nav.sf-menu.clearfix
+            %li.active
+              %a{:href => "index.html"} Home
+            %li.sub-menu
+              %a{:href => "index-1.html"} About
+              %span
+              %ul.submenu
+                %li
+                  %a{:href => "#"} history
+                %li
+                  %a{:href => "#"} news
+                  %span
+                  %ul.submenu
+                    %li
+                      %a{:href => "#"} latest
+                    %li
+                      %a{:href => "#"} archive
+                %li
+                  %a{:href => "#"} testimonials
+            %li
+              %a{:href => "index-2.html"} Products
+            %li
+              %a{:href => "index-3.html"} Scope of services
+            %li
+              %a{:href => "index-4.html"} Contacts
+.slider
+  .camera_wrap
+    %div{"data-src" => "img/picture1.jpg"}
+      .camera-caption.fadeIn
+        %p.title
+          Professional
+          = succeed "metal" do
+            %br/
+          processing
+    %div{"data-src" => "img/picture2.jpg"}
+      .camera-caption.fadeIn
+        %p.title
+          All kinds
+          = succeed "of" do
+            %br/
+          metal works
+    %div{"data-src" => "img/picture3.jpg"}
+      .camera-caption.fadeIn
+        %p.title
+          Highly
+          = succeed "experienced" do
+            %br/
+          personnel
+.welcome-box
+  .container
+    %p.title Welcome!
+    .extra-wrap
+      %p Our Company is the largest Toll Processor in the USA and is unique in being able to offer a "one stop shop" service for SCS, pickling and oiling in coil form together with slitting, decoiling and wire rod pickling.
+.global
+  .center-box
+    .container
+      %h2 Our Services
+      %p.description
+        %span Understanding steel processing
+        = succeed "Students" do
+          %br/
+        of steel processing may be interested in our brief descriptions of each of our main steel processing machines, which you can find by clicking below.
+      .row
+        .col-lg-3.col-md-3.col-sm-6.col-xs-6
+          .thumb-pad0
+            .thumbnail
+              .badge 01
+              .caption
+                %p.title SCS Coil line
+                %p odio dignissimos ducimus qui blanditiis praesentium volupta.                     tum deleniti atque corrupti.
+                %a.btn-default.btn1{:href => "#"} more
+        .col-lg-3.col-md-3.col-sm-6.col-xs-6
+          .thumb-pad0
+            .thumbnail
+              .badge 02
+              .caption
+                %p.title Coil Pickling
+                %p odio dignissimos ducimus qui blanditiis praesentium volupta.                     tum deleniti atque corrupti.
+                %a.btn-default.btn1{:href => "#"} more
+        .col-lg-3.col-md-3.col-sm-6.col-xs-6
+          .thumb-pad0
+            .thumbnail
+              .badge 03
+              .caption
+                %p.title Steel Slitting
+                %p odio dignissimos ducimus qui blanditiis praesentium volupta.                     tum deleniti atque corrupti.
+                %a.btn-default.btn1{:href => "#"} more
+        .col-lg-3.col-md-3.col-sm-6.col-xs-6
+          .thumb-pad0
+            .thumbnail
+              .badge 04
+              .caption
+                %p.title Steel Decoiling
+                %p odio dignissimos ducimus qui blanditiis praesentium volupta.                     tum deleniti atque corrupti.
+                %a.btn-default.btn1{:href => "#"} more
+  .articles-box
+    .container
+      .row
+        .col-lg-4.col-md-4.col-sm-4
+          .thumb-pad1
+            .thumbnail
+              %figure
+                %img{:alt => "", :src => "img/page1_icon1.png"}/
+              .caption
+                %p.title Toll Processing
+                %p Your complete steel processing service
+        .col-lg-4.col-md-4.col-sm-4
+          .thumb-pad1
+            .thumbnail
+              %figure
+                %img{:alt => "", :src => "img/page1_icon2.png"}/
+              .caption
+                %p.title Steel Sales
+                %p From our mills to you
+        .col-lg-4.col-md-4.col-sm-4
+          .thumb-pad1
+            .thumbnail
+              %figure
+                %img{:alt => "", :src => "img/page1_icon3.png"}/
+              .caption
+                %p.title Muller Industry Online
+                %p Total control of your material
+  .container
+    %h2 Our Products
+    .row
+      .col-lg-4.col-md-4.col-sm-4
+        .thumb-pad2
+          .thumbnail
+            %figure
+              %img{:alt => "", :src => "img/page1_pic1.jpg"}/
+            .caption
+              %h3 Lorem ipsum dolor sit amet
+              %p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              %a.btn-default.btn2{:href => "#"} more
+      .col-lg-4.col-md-4.col-sm-4
+        .thumb-pad2
+          .thumbnail
+            %figure
+              %img{:alt => "", :src => "img/page1_pic2.jpg"}/
+            .caption
+              %h3 blanditiis praesentium
+              %p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              %a.btn-default.btn2{:href => "#"} more
+      .col-lg-4.col-md-4.col-sm-4
+        .thumb-pad2
+          .thumbnail
+            %figure
+              %img{:alt => "", :src => "img/page1_pic3.jpg"}/
+            .caption
+              %h3 eligendi optio
+              %p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              %a.btn-default.btn2{:href => "#"} more
+  .touch-box
+    %p.title Get In Touch
     %p
-      %strong Change this page’s content
-      by editing the “index.html” file in the “content” directory. This is the actual page content, and therefore doesn’t include the header, sidebar or style information (those are part of the layout).
-  %li
-    %p
-      %strong> Change the layout
-      , which is the “default.haml” file in the “layouts” directory, and create something unique (and hopefully less bland).
-%p If you need any help with customizing your nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      = succeed "et" do
+        %br/
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+    %ul
+      %li
+        %a.fa.fa-twitter{:href => "#"}
+      %li
+        %a.fa.fa-facebook{:href => "#"}
+      %li
+        %a.fa.fa-pinterest{:href => "#"}
+      %li
+        %a.fa.fa-google-plus{:href => "#"}
+      %li
+        %a.fa.fa-github{:href => "#"}
+  .client-box
+    .container
+      .row
+        .col-lg-12
+          .list_carousel2.responsive.clearfix
+            %ul#foo2
+              %li
+                %figure
+                  %a{:href => "#"}
+                    %img{:alt => "", :src => "img/page1_logo1.png"}/
+              %li
+                %figure
+                  %a{:href => "#"}
+                    %img{:alt => "", :src => "img/page1_logo2.png"}/
+              %li
+                %figure
+                  %a{:href => "#"}
+                    %img{:alt => "", :src => "img/page1_logo3.png"}/
+              %li
+                %figure
+                  %a{:href => "#"}
+                    %img{:alt => "", :src => "img/page1_logo4.png"}/
+              %li
+                %figure
+                  %a{:href => "#"}
+                    %img{:alt => "", :src => "img/page1_logo5.png"}/
+              %li
+                %figure
+                  %a{:href => "#"}
+                    %img{:alt => "", :src => "img/page1_logo6.png"}/
+              %li
+                %figure
+                  %a{:href => "#"}
+                    %img{:alt => "", :src => "img/page1_logo3.png"}/
+            .list_btn2
+              %a#prev2.prev2{:href => "#"}
+              %a#next2.next2{:href => "#"}

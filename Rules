@@ -17,6 +17,7 @@ passthrough '/fonts/*'
 passthrough '/js/*'
 passthrough '/css/*'
 passthrough '/img/*'
+passthrough '/docs-assets/*'
 
 compile '*' do
   if item[:extension] == 'css'
