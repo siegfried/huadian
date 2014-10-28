@@ -1,77 +1,61 @@
 ---
-title: Home
+title: 首页
 ---
 
 .slider
   .camera_wrap
-    %div{"data-src" => "img/picture1.jpg"}
+    %div{"data-src" => "/img/picture1.jpg"}
       .camera-caption.fadeIn
         %p.title
-          Professional
-          = succeed "metal" do
-            %br/
-          processing
-    %div{"data-src" => "img/picture2.jpg"}
+          专业的金属加工
+    %div{"data-src" => "/img/picture2.jpg"}
       .camera-caption.fadeIn
         %p.title
-          All kinds
-          = succeed "of" do
-            %br/
-          metal works
-    %div{"data-src" => "img/picture3.jpg"}
+          繁多的钢材品种
+    %div{"data-src" => "/img/picture3.jpg"}
       .camera-caption.fadeIn
         %p.title
-          Highly
-          = succeed "experienced" do
-            %br/
-          personnel
+          经验丰富的团队
 .welcome-box
   .container
-    %p.title Welcome!
+    %p.title 欢迎！
     .extra-wrap
-      %p Our Company is the largest Toll Processor in the USA and is unique in being able to offer a "one stop shop" service for SCS, pickling and oiling in coil form together with slitting, decoiling and wire rod pickling.
+      %p 重庆桦甸物资有限公司是一家专业从事钢材贸易及钢材加工配送的综合性贸易公司，拥有武钢授权的西南地区一级代理商，以经销武钢冷轧DC01、深冲DC04、热轧Q235、35号、45号钢板为主，同时兼营各大钢厂的其他钢材品种。
 .global
   .center-box
     .container
-      %h2 Our Services
+      %h2 我们的服务
       %p.description
-        %span Understanding steel processing
-        = succeed "Students" do
-          %br/
-        of steel processing may be interested in our brief descriptions of each of our main steel processing machines, which you can find by clicking below.
+        %span 理解金属处理
       .row
         .col-lg-3.col-md-3.col-sm-6.col-xs-6
           .thumb-pad0
             .thumbnail
               .badge 01
               .caption
-                %p.title SCS Coil line
-                %p odio dignissimos ducimus qui blanditiis praesentium volupta.                     tum deleniti atque corrupti.
-                %a.btn-default.btn1{:href => "#"} more
+                %p.title 钢卷表面清洁
+                %p 清除材料表面的氧化皮，使其光滑。
         .col-lg-3.col-md-3.col-sm-6.col-xs-6
           .thumb-pad0
             .thumbnail
               .badge 02
               .caption
-                %p.title Coil Pickling
-                %p odio dignissimos ducimus qui blanditiis praesentium volupta.                     tum deleniti atque corrupti.
-                %a.btn-default.btn1{:href => "#"} more
+                %p.title 钢卷酸洗
+                %p 清除铁锈，仅适用热轧产品。
         .col-lg-3.col-md-3.col-sm-6.col-xs-6
           .thumb-pad0
             .thumbnail
               .badge 03
               .caption
-                %p.title Steel Slitting
-                %p odio dignissimos ducimus qui blanditiis praesentium volupta.                     tum deleniti atque corrupti.
-                %a.btn-default.btn1{:href => "#"} more
+                %p.title 金属切割
+                %p 将钢卷切割为宽度更窄的钢卷。
         .col-lg-3.col-md-3.col-sm-6.col-xs-6
           .thumb-pad0
             .thumbnail
               .badge 04
               .caption
-                %p.title Steel Decoiling
-                %p odio dignissimos ducimus qui blanditiis praesentium volupta.                     tum deleniti atque corrupti.
-                %a.btn-default.btn1{:href => "#"} more
+                %p.title 钢材开卷
+                %p 将钢卷处理平整。
   .articles-box
     .container
       .row
@@ -79,108 +63,50 @@ title: Home
           .thumb-pad1
             .thumbnail
               %figure
-                %img{:alt => "", :src => "img/page1_icon1.png"}/
+                %img{:alt => "", :src => "/img/page1_icon1.png"}/
               .caption
-                %p.title Toll Processing
-                %p Your complete steel processing service
+                %p.title 加工
+                %p 定制钢材加工
         .col-lg-4.col-md-4.col-sm-4
           .thumb-pad1
             .thumbnail
               %figure
-                %img{:alt => "", :src => "img/page1_icon2.png"}/
+                %img{:alt => "", :src => "/img/page1_icon2.png"}/
               .caption
-                %p.title Steel Sales
-                %p From our mills to you
+                %p.title 销售
+                %p 工厂直销
         .col-lg-4.col-md-4.col-sm-4
           .thumb-pad1
             .thumbnail
               %figure
-                %img{:alt => "", :src => "img/page1_icon3.png"}/
+                %img{:alt => "", :src => "/img/page1_icon3.png"}/
               .caption
-                %p.title Muller Industry Online
-                %p Total control of your material
+                %p.title 查询
+                %p 咨询价格，或其他帮助，可通过电话联系
   .container
-    %h2 Our Products
+    %h2 我们的产品
     .row
       .col-lg-4.col-md-4.col-sm-4
         .thumb-pad2
           .thumbnail
             %figure
-              %img{:alt => "", :src => "img/page1_pic1.jpg"}/
+              %img{:alt => "冷轧钢卷", :src => "/img/dc01.jpg"}/
             .caption
-              %h3 Lorem ipsum dolor sit amet
-              %p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              %a.btn-default.btn2{:href => "#"} more
+              %h3 冷轧钢卷
+              %p 产自武钢，材质DC01，厚度0.5至3.0CM。
       .col-lg-4.col-md-4.col-sm-4
         .thumb-pad2
           .thumbnail
             %figure
-              %img{:alt => "", :src => "img/page1_pic2.jpg"}/
+              %img{:alt => "深冲钢卷", :src => "/img/dc04_dc06.jpg"}/
             .caption
-              %h3 blanditiis praesentium
-              %p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              %a.btn-default.btn2{:href => "#"} more
+              %h3 深冲钢卷
+              %p 产地武钢，材质DC04、DC06，厚度0.7至2.0CM。
       .col-lg-4.col-md-4.col-sm-4
         .thumb-pad2
           .thumbnail
             %figure
-              %img{:alt => "", :src => "img/page1_pic3.jpg"}/
+              %img{:alt => "热轧卷和正平板", :src => "/img/q235.jpg"}/
             .caption
-              %h3 eligendi optio
-              %p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              %a.btn-default.btn2{:href => "#"} more
-  .touch-box
-    %p.title Get In Touch
-    %p
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-      = succeed "et" do
-        %br/
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-    %ul
-      %li
-        %a.fa.fa-twitter{:href => "#"}
-      %li
-        %a.fa.fa-facebook{:href => "#"}
-      %li
-        %a.fa.fa-pinterest{:href => "#"}
-      %li
-        %a.fa.fa-google-plus{:href => "#"}
-      %li
-        %a.fa.fa-github{:href => "#"}
-  .client-box
-    .container
-      .row
-        .col-lg-12
-          .list_carousel2.responsive.clearfix
-            %ul#foo2
-              %li
-                %figure
-                  %a{:href => "#"}
-                    %img{:alt => "", :src => "img/page1_logo1.png"}/
-              %li
-                %figure
-                  %a{:href => "#"}
-                    %img{:alt => "", :src => "img/page1_logo2.png"}/
-              %li
-                %figure
-                  %a{:href => "#"}
-                    %img{:alt => "", :src => "img/page1_logo3.png"}/
-              %li
-                %figure
-                  %a{:href => "#"}
-                    %img{:alt => "", :src => "img/page1_logo4.png"}/
-              %li
-                %figure
-                  %a{:href => "#"}
-                    %img{:alt => "", :src => "img/page1_logo5.png"}/
-              %li
-                %figure
-                  %a{:href => "#"}
-                    %img{:alt => "", :src => "img/page1_logo6.png"}/
-              %li
-                %figure
-                  %a{:href => "#"}
-                    %img{:alt => "", :src => "img/page1_logo3.png"}/
-            .list_btn2
-              %a#prev2.prev2{:href => "#"}
-              %a#next2.next2{:href => "#"}
+              %h3 热轧卷和正平板
+              %p 产地武钢，材质Q235B。
