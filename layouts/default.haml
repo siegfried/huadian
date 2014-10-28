@@ -85,8 +85,8 @@
                 %span company name
             %nav.navbar.navbar-default.navbar-static-top.tm_navbar.clearfix{:role => "navigation"}
               %ul.nav.sf-menu.clearfix
-                %li{:class => ('active' if @item.identifier == '/')}
-                  %a{:href => "/"} Home
+                %li{:class => ('active' if @item == @items['/'])}
+                  %a{:href => @items['/'].path} Home
     = yield
     / footer
     %footer
