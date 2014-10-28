@@ -80,28 +80,24 @@
         .menuBox
           .container
             %h1.navbar-brand.navbar-brand_
-              %a{:href => "index.html"}
-                %img{:alt => "", :src => "/img/logo.png"}/
-                %span company name
+              %a{:href => @items['/'].path}
+                %img{:alt => "重庆桦甸物资", :src => @items["/img/logo.png/"].path}/
+                %span 重庆桦甸物资有限公司
             %nav.navbar.navbar-default.navbar-static-top.tm_navbar.clearfix{:role => "navigation"}
               %ul.nav.sf-menu.clearfix
                 %li{:class => ('active' if @item == @items['/'])}
-                  %a{:href => @items['/'].path} Home
+                  %a{:href => @items['/'].path} 首页
     = yield
     / footer
     %footer
       .container
         .row
           .col-lg-12
-            %p.title copyright
+            %p.title 版权所有
             %p
-              %span Muller
+              %span 重庆桦甸物资有限公司
               \&copy;
               %em#copyright-year
-              \&nbsp;
-              %a{:href => "index-5.html"} Privacy policy
             .top-box
-      More Steelworks Website Templates at
-      %a{:href => "http://www.templatemonster.com/category/steelworks-website-templates/", :rel => "nofollow", :target => "_blank"} TemplateMonster.com
     %script{:src => "/js/bootstrap.min.js"}
     %script{:src => "/js/tm-scripts.js"}
