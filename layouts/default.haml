@@ -87,6 +87,8 @@
               %ul.nav.sf-menu.clearfix
                 %li{:class => ('active' if @item == @items['/'])}
                   %a{:href => @items['/'].path} 首页
+                %li{:class => ('active' if @item == @items['/contact/'])}
+                  %a{:href => @items['/contact/'].path} 联系我们
     = yield
     / footer
     %footer
