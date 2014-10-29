@@ -1,6 +1,7 @@
 ---
 title: 联系我们
 address: 巴南区鱼洞大江工业园区黄溪街52、53号
+ak: 5U6KMQNuyQKmqnlQGCTla4gh
 ---
 
 / content
@@ -8,6 +9,7 @@ address: 巴南区鱼洞大江工业园区黄溪街52、53号
   .container
     .map
       %h2.indent 联系我们
+      %script{:src => "http://api.map.baidu.com/api?v=2.0&ak=#{@item[:ak]}"}
       #bmap{:style => "height: 403px;"}
       :javascript
         $(function () {
