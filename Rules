@@ -22,6 +22,8 @@ passthrough '/docs-assets/*'
 compile '*' do
   if item[:extension] == 'css'
     # don’t filter stylesheets
+  elsif item[:extension] == 'sass'
+    filter :sass
   elsif item.binary?
     # don’t filter binary items
   else
@@ -31,7 +33,7 @@ compile '*' do
 end
 
 route '*' do
-  if item[:extension] == 'css'
+  if %w{css sass}.include? item[:extension]
     # Write item with identifier /foo/ to /foo.css
     item.identifier.chop + '.css'
   elsif item.binary?
