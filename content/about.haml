@@ -9,18 +9,19 @@ title: 关于我们
     %p 重庆桦甸物资有限公司是一家专业从事钢材贸易及钢材加工配送的综合性贸易公司，拥有武钢授权的西南地区一级代理商，以经销武钢冷轧DC01、深冲DC04、热轧Q235、35号、45号钢板为主，同时兼营各大钢厂的其他钢材品种。我公司可长期代订武钢冷轧、热轧等材料。
     %p 公司创办以来本着“精诚合作，共求发展”的经营理念以及“诚信、专业、求实、高效”的工作作风，在行业内取得了良好的声誉，凭借自身的产品及服务优势，以重庆为中心，发挥区位优势，建立了覆盖西南地区的强大营销网络和稳定的客户群。
     %p 实现了全国网络市场销售，公司产品广泛用于汽车制造、汽车零部件配套、机械、家电、航海、军工等各个行业。公司自创办以来，不断发展壮大，公司2012年出货量近3万吨，实现年销售额过亿元，建立了强大的品牌与信誉优势，重庆桦甸物质有限公司以雄厚的资金实力，可靠的信誉保证、双赢的服务理念，竭诚为广大客户提供优质的资源、高效的服务，热忱欢迎各界人士光临合作！
-    %h2.indent 资质
-    .row
-      - (1..2).each do |n|
-        .col-lg-6.col-md-6.col-sm-12
-          .thumb-pad2
-            .thumbnail
-              %figure
-                %img{:src => @items["/img/cert_#{n}.png/"].path}/
-    .row
-      - (3..5).each do |n|
-        .col-lg-4.col-md-6.col-sm-12
-          .thumb-pad2
-            .thumbnail
-              %figure
-                %img{:src => @items["/img/cert_#{n}.png/"].path}/
+  .touch-box
+    .container
+      .row
+        - (1..2).each do |n|
+          .col-lg-6.col-md-6.col-sm-12
+            .thumb-pad2
+              .thumbnail
+                %figure
+                  %img{:src => @items["/img/cert_#{n}.png/"].path}/
+      .row
+        - (3..5).each do |n|
+          .col-lg-4.col-md-6.col-sm-12
+            .thumb-pad2
+              .thumbnail
+                %figure
+                  %img{:src => @items["/img/cert_#{n}.png/"].path}/
