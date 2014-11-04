@@ -51,9 +51,9 @@
         .menuBox
           .container
             %h1.navbar-brand.navbar-brand_
-              %a{:href => @items['/'].path}
-                %img{:alt => "重庆桦甸物资", :src => @items["/img/logo.png/"].path}/
-                %span 重庆桦甸物资有限公司
+              %a#logo{:href => @items['/'].path}
+                .main 重庆桦甸物资
+                .secondary 西南地区一级代理商
             %nav.navbar.navbar-default.navbar-static-top.tm_navbar.clearfix{:role => "navigation"}
               %ul.nav.sf-menu.clearfix
                 %li{:class => ('active' if @item == @items['/'])}
