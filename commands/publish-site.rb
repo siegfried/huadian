@@ -25,7 +25,12 @@ bucket            = secrets['bucket']
 digest            = OpenSSL::Digest.new('sha1')
 
 def mime_type(path)
-  `file --mime #{path}`.match(/\s.+/).to_s[1..-1]
+  case File.extname(path)
+  when '.css'
+    'text/css'
+  else
+    `file --mime #{path}`.match(/\s.+/).to_s[1..-1]
+  end
 end
 
 run do |opts, args, cmd|
